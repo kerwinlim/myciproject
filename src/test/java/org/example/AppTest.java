@@ -20,7 +20,7 @@ public class AppTest {
     }
 
     @Test
-    public void testSayHelloWithName() {
+    public void sayHelloWithName() {
         assertEquals("Hello World", app.sayHello("World"));
     }
 
