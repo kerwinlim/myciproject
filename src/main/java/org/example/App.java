@@ -6,5 +6,11 @@ public class App {
         return "Hello";
     }
 
+    public String sayHello(String name) {
+        if (name == null)
+            return "Hello";
+        else
+            return "Hello " + name;
+    }
 
 }
