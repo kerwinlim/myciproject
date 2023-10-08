@@ -34,7 +34,6 @@ jobs:
       run: > 
         mvn -f pom.xml 
         clean verify ${{ matrix.additional-maven-args }}
-        surefire-report:report-only site:site -DgenerateReports=false
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
       if: ${{ always() }}
