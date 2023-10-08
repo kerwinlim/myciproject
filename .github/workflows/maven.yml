@@ -12,7 +12,6 @@ jobs:
         include:
           - java: 8
             additional-maven-args: "-Pjacoco"
-          - java: 11
         os: [ubuntu-latest]
     name: Builds with Java ${{ matrix.java }}
     steps:
